@@ -49,7 +49,6 @@ if st.session_state.api_key_entered:
             df = pd.read_csv(temp_file_path, encoding='utf-8')
             st.session_state.data = df
             st.session_state.cities_list = df['city'].unique()
-            st.write(df.head())
         else:
             st.session_state.csv_uploaded = False
 
