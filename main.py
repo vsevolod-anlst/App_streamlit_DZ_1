@@ -61,7 +61,6 @@ if st.session_state.csv_uploaded:
         st.write(f"Вы выбрали: {city}")
 
         is_Anomal_temp, cnt_over_time, temp, seasonal_stats_current_season, min_temp, max_temp, mean_temp, city_data = get_seasonal_stats_min_temp_max_temp_mean_temp(city, st.session_state.api_key, df)
-        st.write(city_data.head())
         # Посчитаем внутри 2 сигм оно или нет
         if is_Anomal_temp is not None and is_Anomal_temp:
             st.write(f"Температура составляет: {temp:.2f} °C")
