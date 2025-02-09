@@ -1,4 +1,6 @@
 #streamlit run app.py - запуск в терминале
+
+
 import streamlit as st
 import pandas as pd
 import tempfile
